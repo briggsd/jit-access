@@ -1,0 +1,33 @@
+{
+  "name": "jit-access",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy"
+  },
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1147.0",
+    "@aws-sdk/client-identitystore": "^3.1147.0",
+    "@aws-sdk/client-lambda": "^3.1147.0",
+    "@aws-sdk/client-organizations": "^3.1147.0",
+    "@aws-sdk/client-secrets-manager": "^3.1147.0",
+    "@aws-sdk/client-sfn": "^3.1147.0",
+    "@aws-sdk/client-sso-admin": "^3.1147.0",
+    "@aws-sdk/lib-dynamodb": "^3.1147.0",
+    "aws-cdk-lib": "^2.272.0",
+    "constructs": "^10.8.1"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.164",
+    "@types/node": "^26.6.4",
+    "aws-cdk": "^2.1144.0",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  },
+  "private": true
+}

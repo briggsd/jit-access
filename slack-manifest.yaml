@@ -1,0 +1,26 @@
+display_information:
+  name: AWS Access
+  description: Request temporary AWS access
+features:
+  bot_user:
+    display_name: aws-access
+    always_online: true
+  slash_commands:
+    - command: /jit
+      url: https://pjnuhu375frmrfi2oniwcgyq5u0pxtun.lambda-url.us-east-2.on.aws/
+      description: Request temporary AWS access
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - commands
+      - chat:write
+      - im:write
+      - users:read
+      - users:read.email
+settings:
+  interactivity:
+    is_enabled: true
+    request_url: https://pjnuhu375frmrfi2oniwcgyq5u0pxtun.lambda-url.us-east-2.on.aws/
+  org_deploy_enabled: false
+  socket_mode_enabled: false
